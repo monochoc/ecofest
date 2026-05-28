@@ -429,6 +429,104 @@ a {
   background: var(--amarillo);
 }
 
+/* COANIQUEM MINI HOME */
+
+.coaniquem-mini-section {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255, 209, 0, 0.18), transparent 24%),
+    radial-gradient(circle at 90% 80%, rgba(182, 222, 219, 0.26), transparent 25%),
+    linear-gradient(180deg, #f6fbef 0%, #fffdf3 100%);
+}
+
+.coaniquem-mini-card {
+  background: linear-gradient(105deg, #f4ad9d 0%, #f4ad9d 52%, #f7f3ed 52%, #f7f3ed 100%);
+  border: 4px solid #081923;
+  border-radius: 30px;
+  padding: 36px;
+  box-shadow: 16px 16px 0 rgba(8, 25, 35, 0.12);
+  overflow: hidden;
+}
+
+.coaniquem-mini-kicker {
+  display: inline-block;
+  background: #ffd100;
+  color: #081923;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.coaniquem-mini-logo {
+  width: min(100%, 300px);
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 18px;
+  padding: 14px 18px;
+  display: block;
+}
+
+.coaniquem-mini-title {
+  font-family: "Poppins", sans-serif;
+  color: #081923;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.coaniquem-mini-title span {
+  display: inline-block;
+  background: #ffd100;
+  border-radius: 12px;
+  padding: 0 10px 4px;
+  box-shadow: 6px 6px 0 #e30613;
+}
+
+.coaniquem-mini-text {
+  color: #081923;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-weight: 700;
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+
+.coaniquem-mini-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #081923;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 13px 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  box-shadow: 7px 7px 0 #b6dedb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coaniquem-mini-btn:hover,
+.coaniquem-mini-btn:focus {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 10px 10px 0 #b6dedb;
+}
+
+.coaniquem-mini-img {
+  width: min(100%, 330px);
+  max-height: 420px;
+  object-fit: contain;
+  background: #ffffff;
+  border: 4px solid #081923;
+  border-radius: 22px;
+  padding: 10px;
+  box-shadow: 12px 12px 0 #ffd100, 19px 19px 0 #e30613;
+}
+
 /* SECCIONES COMPLEMENTARIAS */
 
 .about-event {
@@ -585,5 +683,41 @@ a {
   .map-wrapper iframe,
   .google-map {
     height: 320px;
+  }
+}
+
+/* RESPONSIVE COANIQUEM MINI */
+
+@media (max-width: 991.98px) {
+  .coaniquem-mini-card {
+    background: linear-gradient(180deg, #f4ad9d 0%, #f4ad9d 55%, #f7f3ed 55%, #f7f3ed 100%);
+    padding: 30px 24px 40px;
+  }
+
+  .coaniquem-mini-img {
+    margin-top: 16px;
+    width: min(100%, 280px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .coaniquem-mini-card {
+    border-width: 3px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 0 rgba(8, 25, 35, 0.12);
+  }
+
+  .coaniquem-mini-logo {
+    width: 100%;
+  }
+
+  .coaniquem-mini-title {
+    font-size: 2rem;
+  }
+
+  .coaniquem-mini-img {
+    width: 100%;
+    max-height: 360px;
+    box-shadow: 8px 8px 0 #ffd100, 14px 14px 0 #e30613;
   }
 }

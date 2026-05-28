@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coaniquem en EcoFest 2026 | Colegio Suizo Santiago</title>
+  <meta name="description" content="Coaniquem en EcoFest 2026: punto de donación solidaria, economía circular, triple impacto y guía de qué donar en el Colegio Suizo de Santiago.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap 5.3.8 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Puedes mantener este link si ya usas styles.css en el sitio principal -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    :root {
+      --coaniquem-navy: #081923;
+      --coaniquem-navy-soft: #102631;
+      --coaniquem-yellow: #ffd100;
+      --coaniquem-red: #e30613;
+      --coaniquem-coral: #ffa998;
+      --coaniquem-mint: #9ed8d4;
+      --coaniquem-cream: #fbf7ef;
+      --coaniquem-white: #ffffff;
+      --coaniquem-ink: #071923;
+      --coaniquem-muted: #4f5d63;
+      --coaniquem-shadow: 0 18px 46px rgba(8, 25, 35, 0.18);
+      --coaniquem-radius: 28px;
+
+      /* Compatibilidad con estilos EcoFest existentes */
+      --verde-oscuro: #081923;
+      --verde-principal: #0f766e;
+      --verde-claro: #9ed8d4;
+      --verde-suave: #eaf6f5;
+      --amarillo: #ffd100;
+      --crema: #fbf7ef;
+      --texto: #081923;
+      --gris: #4f5d63;
+      --blanco: #ffffff;
+      --sombra: var(--coaniquem-shadow);
+      --borde: rgba(8, 25, 35, 0.12);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Nunito Sans", sans-serif;
+      color: var(--coaniquem-ink);
+      background:
+        radial-gradient(circle at 8% 8%, rgba(255, 209, 0, 0.28), transparent 24%),
+        radial-gradient(circle at 92% 12%, rgba(158, 216, 212, 0.35), transparent 26%),
+        linear-gradient(180deg, var(--coaniquem-cream) 0%, #fff 100%);
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(96%, 1500px);
+      margin: 24px auto;
+      background: var(--coaniquem-cream);
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: var(--coaniquem-shadow);
+      border: 1px solid rgba(8, 25, 35, 0.10);
+      position: relative;
+    }
+
+    /* Franja gráfica inspirada en las piezas Coaniquem */
+    .pattern-band {
+      height: 34px;
+      background:
+        linear-gradient(135deg, transparent 0 20%, var(--coaniquem-navy) 20% 38%, transparent 38%) 0 0/170px 34px,
+        linear-gradient(135deg, transparent 0 20%, var(--coaniquem-red) 20% 38%, transparent 38%) 55px 0/170px 34px,
+        linear-gradient(135deg, transparent 0 20%, var(--coaniquem-mint) 20% 38%, transparent 38%) 110px 0/170px 34px,
+        var(--coaniquem-yellow);
+    }
+
+    .eco-navbar {
+      min-height: 84px;
+      background: rgba(8, 25, 35, 0.97);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      border-bottom: 4px solid var(--coaniquem-yellow);
+    }
+
+    .eco-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      font-size: 1.55rem;
+      color: var(--coaniquem-white);
+      letter-spacing: 0.5px;
+    }
+
+    .eco-brand:hover,
+    .eco-brand:focus {
+      color: var(--coaniquem-yellow);
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--coaniquem-yellow);
+      display: grid;
+      place-items: center;
+      color: var(--coaniquem-navy);
+      font-size: 1.45rem;
+      box-shadow: 6px 6px 0 var(--coaniquem-red);
+    }
+
+    .eco-nav-link {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      color: rgba(255,255,255,0.88);
+      transition: color 0.2s ease;
+    }
+
+    .eco-nav-link:hover,
+    .eco-nav-link:focus {
+      color: var(--coaniquem-yellow);
+    }
+
+    .eco-toggler {
+      border-color: rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.9);
+    }
+
+    .eco-btn-small,
+    .eco-btn-primary {
+      border: 0;
+      border-radius: 999px;
+      background: var(--coaniquem-yellow);
+      color: var(--coaniquem-navy);
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      padding: 13px 24px;
+      box-shadow: 7px 7px 0 var(--coaniquem-red);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .eco-btn-small:hover,
+    .eco-btn-small:focus,
+    .eco-btn-primary:hover,
+    .eco-btn-primary:focus {
+      color: var(--coaniquem-navy);
+      transform: translateY(-3px);
+      box-shadow: 9px 9px 0 var(--coaniquem-red);
+    }
+
+    .btn-dark-coaniquem {
+      border: 0;
+      border-radius: 999px;
+      background: var(--coaniquem-navy);
+      color: var(--coaniquem-white);
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      padding: 14px 26px;
+      box-shadow: 7px 7px 0 var(--coaniquem-mint);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-dark-coaniquem:hover,
+    .btn-dark-coaniquem:focus {
+      color: var(--coaniquem-white);
+      transform: translateY(-3px);
+      box-shadow: 9px 9px 0 var(--coaniquem-mint);
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      background: var(--coaniquem-yellow);
+      color: var(--coaniquem-navy);
+      border-radius: 8px;
+      padding: 7px 14px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      box-shadow: 5px 5px 0 rgba(8, 25, 35, 0.12);
+    }
+
+    .coaniquem-hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 84% 28%, rgba(255, 209, 0, 0.24), transparent 24%),
+        linear-gradient(100deg, var(--coaniquem-coral) 0%, var(--coaniquem-coral) 46%, var(--coaniquem-cream) 46%, var(--coaniquem-cream) 100%);
+    }
+
+    .coaniquem-hero::before {
+      content: "";
+      position: absolute;
+      inset: auto auto 36px -70px;
+      width: 210px;
+      height: 210px;
+      background: var(--coaniquem-red);
+      transform: rotate(12deg);
+      border-radius: 42px;
+      opacity: 0.95;
+    }
+
+    .coaniquem-hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: 120px;
+      width: 210px;
+      height: 210px;
+      background: var(--coaniquem-mint);
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+
+    .coaniquem-hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 78px 0 88px;
+    }
+
+    .date-pill {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      color: var(--coaniquem-navy);
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      background: rgba(255, 255, 255, 0.78);
+      border: 2px solid rgba(8, 25, 35, 0.18);
+      margin-bottom: 22px;
+    }
+
+    .coaniquem-title {
+      font-family: "Poppins", sans-serif;
+      color: var(--coaniquem-navy);
+      font-size: clamp(2.65rem, 5.6vw, 5.5rem);
+      font-weight: 900;
+      line-height: 0.98;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+      text-transform: uppercase;
+    }
+
+    .coaniquem-title .highlight {
+      display: inline-block;
+      background: var(--coaniquem-yellow);
+      border-radius: 12px;
+      padding: 0 12px 4px;
+      box-shadow: 8px 8px 0 var(--coaniquem-red);
+    }
+
+    .coaniquem-lead {
+      color: var(--coaniquem-navy);
+      font-size: 1.16rem;
+      line-height: 1.68;
+      max-width: 650px;
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .poster-frame {
+      position: relative;
+      width: min(100%, 520px);
+      margin: 0 auto;
+      background: var(--coaniquem-white);
+      border: 5px solid var(--coaniquem-navy);
+      border-radius: 24px;
+      padding: 14px;
+      box-shadow: 16px 16px 0 var(--coaniquem-yellow), 26px 26px 0 var(--coaniquem-red);
+    }
+
+    .poster-frame img {
+      width: 100%;
+      max-height: 690px;
+      object-fit: contain;
+      display: block;
+      border-radius: 14px;
+      background: var(--coaniquem-white);
+    }
+
+    .section-title,
+    .section-heading {
+      font-family: "Poppins", sans-serif;
+      color: var(--coaniquem-navy);
+      font-weight: 900;
+      font-size: clamp(1.7rem, 3vw, 2.55rem);
+      line-height: 1.12;
+      letter-spacing: -0.5px;
+    }
+
+    .section-title span {
+      color: var(--coaniquem-red);
+      margin: 0 7px;
+    }
+
+    .event-purpose {
+      color: var(--coaniquem-muted);
+      line-height: 1.7;
+      font-size: 1.06rem;
+      font-weight: 600;
+    }
+
+    .coaniquem-section {
+      background: var(--coaniquem-cream);
+    }
+
+    .coaniquem-section-white {
+      background: var(--coaniquem-white);
+    }
+
+    .coaniquem-section-navy {
+      background:
+        radial-gradient(circle at 8% 10%, rgba(255, 209, 0, 0.18), transparent 20%),
+        radial-gradient(circle at 92% 75%, rgba(158, 216, 212, 0.18), transparent 24%),
+        var(--coaniquem-navy);
+      color: var(--coaniquem-white);
+    }
+
+    .coaniquem-section-navy .section-heading,
+    .coaniquem-section-navy .section-title,
+    .coaniquem-section-navy .event-purpose {
+      color: var(--coaniquem-white);
+    }
+
+    .coaniquem-card {
+      height: 100%;
+      background: var(--coaniquem-white);
+      border: 3px solid var(--coaniquem-navy);
+      border-radius: var(--coaniquem-radius);
+      padding: 32px;
+      box-shadow: 10px 10px 0 rgba(8, 25, 35, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .coaniquem-card::after {
+      content: "";
+      position: absolute;
+      right: -34px;
+      top: -34px;
+      width: 92px;
+      height: 92px;
+      background: var(--coaniquem-yellow);
+      transform: rotate(45deg);
+    }
+
+    .coaniquem-card h3 {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      font-family: "Poppins", sans-serif;
+      color: var(--coaniquem-navy);
+      font-weight: 900;
+      font-size: 1.28rem;
+      margin-bottom: 16px;
+    }
+
+    .coaniquem-card p,
+    .coaniquem-card li {
+      color: var(--coaniquem-muted);
+      line-height: 1.68;
+      font-size: 1.03rem;
+      font-weight: 600;
+    }
+
+    .impact-card {
+      border: 3px solid var(--coaniquem-navy);
+      border-radius: 24px;
+      padding: 28px;
+      background: var(--coaniquem-white);
+      box-shadow: 10px 10px 0 var(--coaniquem-mint);
+      height: 100%;
+    }
+
+    .impact-card.yellow {
+      box-shadow: 10px 10px 0 var(--coaniquem-yellow);
+    }
+
+    .impact-card.coral {
+      box-shadow: 10px 10px 0 var(--coaniquem-coral);
+    }
+
+    .impact-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--coaniquem-yellow);
+      border: 3px solid var(--coaniquem-navy);
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .impact-card h3 {
+      font-family: "Poppins", sans-serif;
+      color: var(--coaniquem-navy);
+      font-weight: 900;
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .impact-card p {
+      color: var(--coaniquem-muted);
+      line-height: 1.62;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+
+    .donation-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .donation-list li {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+      align-items: flex-start;
+    }
+
+    .donation-list li::before {
+      content: "✓";
+      flex: 0 0 auto;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--coaniquem-mint);
+      color: var(--coaniquem-navy);
+      display: grid;
+      place-items: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      margin-top: 3px;
+    }
+
+    .warning-list li::before {
+      content: "!";
+      background: var(--coaniquem-coral);
+    }
+
+    .condition-strip {
+      background: var(--coaniquem-navy);
+      color: var(--coaniquem-white);
+      border-radius: var(--coaniquem-radius);
+      padding: 34px;
+      box-shadow: 12px 12px 0 var(--coaniquem-yellow);
+      border: 3px solid var(--coaniquem-navy);
+    }
+
+    .condition-strip h3 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      margin-bottom: 14px;
+      color: var(--coaniquem-white);
+    }
+
+    .condition-strip p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0;
+      line-height: 1.65;
+      font-weight: 700;
+    }
+
+    .secondary-image-frame {
+      background: var(--coaniquem-white);
+      border: 4px solid var(--coaniquem-navy);
+      border-radius: 28px;
+      padding: 14px;
+      box-shadow: 14px 14px 0 var(--coaniquem-coral);
+    }
+
+    .secondary-image-frame img {
+      display: block;
+      width: 100%;
+      border-radius: 18px;
+    }
+
+    .logistics-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--coaniquem-yellow);
+      color: var(--coaniquem-navy);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      margin: 6px 6px 6px 0;
+      border: 2px solid var(--coaniquem-navy);
+    }
+
+    .equivalence-card {
+      background: var(--coaniquem-white);
+      border: 4px solid var(--coaniquem-navy);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 10px 10px 0 rgba(255, 209, 0, 0.9);
+      height: 100%;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .equivalence-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 14px 14px 0 rgba(255, 209, 0, 0.9);
+    }
+
+    .equivalence-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .mini-banner {
+      border-radius: 28px;
+      background: var(--coaniquem-coral);
+      border: 3px solid var(--coaniquem-navy);
+      padding: 28px;
+      box-shadow: 10px 10px 0 var(--coaniquem-red);
+    }
+
+    .mini-banner h3 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      color: var(--coaniquem-navy);
+      margin-bottom: 10px;
+    }
+
+    .mini-banner p {
+      color: var(--coaniquem-navy);
+      font-weight: 700;
+      line-height: 1.65;
+      margin-bottom: 0;
+    }
+
+    .coaniquem-cta {
+      background:
+        linear-gradient(135deg, rgba(8, 25, 35, 0.96), rgba(8, 25, 35, 0.92)),
+        var(--coaniquem-navy);
+      color: var(--coaniquem-white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .coaniquem-cta::before {
+      content: "";
+      position: absolute;
+      top: -55px;
+      right: 11%;
+      width: 150px;
+      height: 150px;
+      background: var(--coaniquem-yellow);
+      transform: rotate(45deg);
+    }
+
+    .coaniquem-cta .section-heading,
+    .coaniquem-cta p {
+      color: var(--coaniquem-white);
+    }
+
+    .footer-ecofest {
+      background: var(--coaniquem-navy);
+      color: var(--coaniquem-white);
+      font-family: "Nunito Sans", sans-serif;
+      border-top: 4px solid var(--coaniquem-yellow);
+    }
+
+    .footer-ecofest a {
+      color: var(--coaniquem-yellow);
+      font-weight: 900;
+    }
+
+    .footer-ecofest a:hover,
+    .footer-ecofest a:focus {
+      color: var(--coaniquem-white);
+    }
+
+    @media (max-width: 991.98px) {
+      .page {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      .coaniquem-hero {
+        background:
+          linear-gradient(180deg, var(--coaniquem-coral) 0%, var(--coaniquem-coral) 46%, var(--coaniquem-cream) 46%, var(--coaniquem-cream) 100%);
+      }
+
+      .coaniquem-hero-content {
+        padding: 64px 0 76px;
+      }
+
+      .poster-frame {
+        margin-top: 18px;
+        box-shadow: 10px 10px 0 var(--coaniquem-yellow), 18px 18px 0 var(--coaniquem-red);
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .pattern-band {
+        height: 24px;
+        background-size: 120px 24px;
+      }
+
+      .eco-brand {
+        font-size: 1.3rem;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+      }
+
+      .coaniquem-title {
+        letter-spacing: -1px;
+      }
+
+      .coaniquem-card,
+      .condition-strip,
+      .mini-banner {
+        padding: 24px;
+      }
+
+      .poster-frame {
+        padding: 10px;
+        border-width: 3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="pattern-band" aria-hidden="true"></div>
+
+    <!-- HEADER / NAVBAR BOOTSTRAP -->
+    <nav class="navbar navbar-expand-lg eco-navbar sticky-top">
+      <div class="container-fluid px-4 px-lg-5">
+
+        <a class="navbar-brand eco-brand" href="index.html#inicio">
+          <img class="logo-navbar" src="assets/Logo-CMA_sf.png" alt="Logo EcoFest">
+          <span>EcoFest</span>
+        </a>
+
+        <button
+          class="navbar-toggler eco-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarEcofest"
+          aria-controls="navbarEcofest"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarEcofest">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 pt-3 pt-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link eco-nav-link" href="index.html#inicio">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link eco-nav-link" href="#donaciones">Qué donar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link eco-nav-link" href="#impacto">Triple impacto</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link eco-nav-link" href="#equivalencias">Equivalencias</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link eco-nav-link" href="#logistica">Logística</a>
+            </li>
+
+            <li class="nav-item ms-lg-2">
+              <a class="btn eco-btn-small" href="index.html#contacto">Contacto</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- HERO COANIQUEM -->
+    <section class="coaniquem-hero" id="inicio-coaniquem">
+      <div class="container">
+        <div class="row align-items-center g-5 coaniquem-hero-content">
+
+          <div class="col-lg-6">
+            <div class="date-pill">📅 EcoFest 2026 · 06 junio</div>
+
+            <h1 class="coaniquem-title">
+              Rehabilitemos <span class="highlight">donando</span>
+            </h1>
+
+            <p class="coaniquem-lead">
+              Coaniquem llega a EcoFest con una acción solidaria y circular: recibir donaciones en buen estado para darles una segunda vida y apoyar el trabajo de la fundación.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#donaciones" class="btn btn-lg eco-btn-primary">Ver qué donar</a>
+              <a href="#logistica" class="btn btn-lg btn-dark-coaniquem">Cómo funcionará</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <div class="poster-frame">
+              <img
+                src="assets/coaniquem-que-donar.png"
+                alt="Información sobre qué donar y qué no donar a Coaniquem"
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPÓSITO -->
+    <section class="coaniquem-section-white py-5" id="proposito-coaniquem">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <p class="section-kicker mb-3">Coaniquem en EcoFest</p>
+            <h2 class="section-heading mb-3">Una actividad con sentido ambiental y social</h2>
+          </div>
+
+          <div class="col-lg-7">
+            <p class="event-purpose">
+              La iniciativa busca potenciar la economía circular y dar a conocer el impacto que tienen las donaciones. Durante el EcoFest, la comunidad escolar podrá participar entregando objetos en buen estado en el punto de recolección de Coaniquem.
+            </p>
+            <p class="event-purpose mb-0">
+              Las donaciones serán posteriormente gestionadas por la fundación en sus tiendas solidarias, transformando objetos que ya no se usan en una oportunidad de ayuda concreta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ DONAR -->
+    <section class="coaniquem-section py-5" id="donaciones">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-9">
+            <p class="section-kicker mb-3">Guía de donaciones</p>
+            <h2 class="section-title mb-4">
+              <span>◆</span> ¿Qué donar? <span>◆</span>
+            </h2>
+            <p class="event-purpose">
+              Para que las donaciones puedan reutilizarse, todo debe estar limpio, completo, funcionando y en perfecto estado.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="coaniquem-card">
+              <h3>Sí recibimos</h3>
+              <ul class="donation-list">
+                <li>Ropa para mujer, hombre, niños y niñas.</li>
+                <li>Zapatos y accesorios.</li>
+                <li>Menaje y decoración.</li>
+                <li>Juguetes, rodados, libros y música.</li>
+                <li>Objetos útiles, completos y aptos para una segunda vida.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="coaniquem-card">
+              <h3>No recibimos</h3>
+              <ul class="donation-list warning-list">
+                <li>Artículos enchufables, parrillas, objetos cortopunzantes, andadores y sillas de auto.</li>
+                <li>Colchones, pijamas y/o ropa interior.</li>
+                <li>Textos escolares ministeriales.</li>
+                <li>Objetos rotos, incompletos o con fallas.</li>
+                <li>Ropa con roturas, manchas o motas.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="condition-strip">
+              <h3>Recuerda: todo debe estar en perfecto estado</h3>
+              <p>
+                La ropa debe venir sin roturas, sin manchas y sin motas. Los objetos deben venir sin roturas, sin piezas faltantes y funcionando sin fallas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRIPLE IMPACTO -->
+    <section class="coaniquem-section-navy py-5" id="impacto">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-9">
+            <p class="section-kicker mb-3">Triple impacto</p>
+            <h2 class="section-heading mb-4">Donar también es una acción circular</h2>
+            <p class="event-purpose">
+              Esta actividad conecta el cuidado del medio ambiente, la ayuda social y la participación de la comunidad escolar.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="impact-card yellow">
+              <div class="impact-icon">♻️</div>
+              <h3>Impacto ambiental</h3>
+              <p>Promueve la reutilización y evita que productos en buen estado terminen como residuos.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="impact-card coral">
+              <div class="impact-icon">🤝</div>
+              <h3>Impacto social</h3>
+              <p>Apoya la labor de Coaniquem y visibiliza el valor de donar de manera responsable.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="impact-card">
+              <div class="impact-icon">🏫</div>
+              <h3>Impacto comunitario</h3>
+              <p>Invita a estudiantes, familias y comunidad escolar a participar en una acción concreta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONARÁ / CONTENEDOR SECUNDARIO -->
+    <section class="coaniquem-section-white py-5" id="funcionamiento">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6">
+            <p class="section-kicker mb-3">Punto de recolección</p>
+            <h2 class="section-heading mb-3">¿Cómo funcionará durante el EcoFest?</h2>
+
+            <p class="event-purpose">
+              El día del EcoFest se habilitará un espacio tipo stand con un contenedor de Coaniquem, donde las familias podrán depositar sus donaciones.
+            </p>
+
+            <p class="event-purpose">
+              La imagen del contenedor se deja como elemento secundario, para explicar visualmente cómo será el punto de recolección sin quitar protagonismo a la gráfica principal de “qué donar”.
+            </p>
+
+            <div class="mt-3">
+              <span class="logistics-pill">📦 Contenedor de donaciones</span>
+              <span class="logistics-pill">👥 Apoyo de voluntarios</span>
+              <span class="logistics-pill">♻️ Economía circular</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="secondary-image-frame">
+              <img
+                src="assets/coaniquem-contenedor.jpeg"
+                alt="Contenedor de donaciones de Coaniquem Store"
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIVALENCIAS -->
+    <section class="coaniquem-section py-5" id="equivalencias">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-9">
+            <p class="section-kicker mb-3">Tus donaciones marcan la diferencia</p>
+            <h2 class="section-title mb-4">
+              <span>◆</span> Equivalencias de donación <span>◆</span>
+            </h2>
+            <p class="event-purpose">
+              Estas gráficas ayudan a mostrar cómo distintos tipos de donaciones pueden transformarse en apoyo concreto para niños y niñas.
+            </p>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <article class="equivalence-card">
+              <img src="assets/coaniquem-equivalencia-jeans-panuelos.png" alt="Equivalencias de jeans de mujer, pañuelos y bufandas para una curación">
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="equivalence-card">
+              <img src="assets/coaniquem-equivalencia-vestidos-zapatos.png" alt="Equivalencias de vestidos y zapatos de mujer para una curación">
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="equivalence-card">
+              <img src="assets/coaniquem-equivalencia-accesorios-polerones.png" alt="Equivalencias de accesorios de hombre y polerones para una curación">
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="equivalence-card">
+              <img src="assets/coaniquem-equivalencia-chaquetas-jeans.png" alt="Equivalencias de chaquetas y jeans de hombre para una curación">
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="equivalence-card">
+              <img src="assets/coaniquem-equivalencia-poleras-camisas-deporte.png" alt="Equivalencias de poleras, camisas y ropa de deporte de hombre para una curación">
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- CTA -->
+    <section class="coaniquem-cta py-5">
+      <div class="container text-center position-relative">
+        <h2 class="section-heading mb-3">Participa donando en EcoFest</h2>
+        <p class="mx-auto mb-4" style="max-width: 760px;">
+          Revisa en casa qué objetos están en buen estado y pueden tener una segunda vida. Tu donación puede apoyar una causa solidaria y fortalecer la economía circular.
+        </p>
+        <a href="index.html#inicio" class="btn btn-lg eco-btn-primary">
+          Volver a EcoFest
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-ecofest py-4">
+      <div class="container text-center">
+
+        <p class="mb-2">
+          Organiza la Comisión de Medio Ambiente del Centro de Padres
+        </p>
+
+        <p class="mb-0">
+          Contacto:
+          <a href="mailto:medioambiente.cpp@css.cl">
+            medioambiente.cpp@css.cl
+          </a>
+        </p>
+
+      </div>
+    </footer>
+
+    <div class="pattern-band" aria-hidden="true"></div>
+  </main>
+
+  <!-- Bootstrap JS Bundle 5.3.8 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
