@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoFest 2026 | Colegio Suizo Santiago</title>
-  <meta name="description" content="EcoFest 2026 del Colegio Suizo Santiago. Feria ecológica escolar con actividades, emprendimientos sustentables, expositores y educación ambiental.">
+  <title>Ecofest 2026 | Colegio Suizo Santiago</title>
+  <meta name="description" content="Ecofest 2026 del Colegio Suizo Santiago. Jornada de sustentabilidad escolar con circularidad, charlas, talleres, jornadas circulares, feria sustentable y Coaniquem.">
   <meta name="robots" content="index, follow">
 
-  <!-- Tipografías -->
+  <!-- Tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet"
   >
 
   <!-- Bootstrap 5.3.8 -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
 
-  <!-- Estilos propios EcoFest -->
+  <!-- Estilos propios Ecofest -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -30,116 +30,196 @@
 
     <!-- HEADER / NAVBAR BOOTSTRAP -->
     <nav class="navbar navbar-expand-lg eco-navbar sticky-top">
-    <div class="container-fluid px-4 px-lg-5">
+      <div class="container-fluid px-4 px-lg-5">
 
-        <a class="navbar-brand eco-brand" href="#inicio">
-          <img class="logo-navbar" src="assets/Logo-CMA_sf.png" alt="Logo EcoFest">
-          <span>EcoFest</span>
+        <a class="navbar-brand eco-brand" href="#inicio" aria-label="Ir al inicio de Ecofest 2026">
+          <img class="logo-navbar" src="assets/Logo-CMA_sf.png" alt="Logo Ecofest">
+          <span>Ecofest</span>
         </a>
 
-        <button 
-        class="navbar-toggler eco-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarEcofest" 
-        aria-controls="navbarEcofest" 
-        aria-expanded="false" 
-        aria-label="Abrir menú"
+        <button
+          class="navbar-toggler eco-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarEcofest"
+          aria-controls="navbarEcofest"
+          aria-expanded="false"
+          aria-label="Abrir menú"
         >
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarEcofest">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 pt-3 pt-lg-0">
-
-            <li class="nav-item">
-            <a class="nav-link eco-nav-link" href="#inicio">Inicio</a>
-            </li>
-
-          <!-- 
-              ==================================================
-              POSTULACIÓN / CONVOCATORIA - OCULTA TEMPORALMENTE
-              Para reactivar: quitar estos comentarios.
-              ==================================================
-            <li class="nav-item">
-            <a class="nav-link eco-nav-link" href="#convocatoria">Postulación</a>
-            </li>
-
-
-            -->
-
-            <li class="nav-item">
-            <a class="nav-link eco-nav-link" href="#proposito">Propósito</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link eco-nav-link" href="#coaniquem">Coaniquem</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link eco-nav-link" href="#actividades">Actividades</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link eco-nav-link" href="#charlas">Charlas</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link eco-nav-link" href="#talleres">Talleres</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link eco-nav-link" href="#lugar">Lugar</a>
-            </li>
-
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 pt-3 pt-lg-0">
+            <li class="nav-item"><a class="nav-link eco-nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link eco-nav-link" href="#actividades">Actividades</a></li>
+            <li class="nav-item"><a class="nav-link eco-nav-link" href="#programa">Programa</a></li>
+            <li class="nav-item"><a class="nav-link eco-nav-link" href="#charlas">Charlas</a></li>
+            <li class="nav-item"><a class="nav-link eco-nav-link" href="#talleres">Talleres</a></li>
+            <li class="nav-item"><a class="nav-link eco-nav-link" href="#jornadas">Jornadas</a></li>
+            <li class="nav-item"><a class="nav-link eco-nav-link" href="#coaniquem">Coaniquem</a></li>
+            <li class="nav-item"><a class="nav-link eco-nav-link" href="#lugar">Lugar</a></li>
             <li class="nav-item ms-lg-2">
-            <a class="btn eco-btn-small" href="#contacto">Contacto 🍃</a>
+              <a class="btn eco-btn-small" href="https://forms.gle/5asxhN7AXFr4Eody7" target="_blank" rel="noopener noreferrer">Inscríbete</a>
             </li>
-
-        </ul>
+          </ul>
         </div>
 
-    </div>
+      </div>
     </nav>
 
     <!-- HERO -->
-    <section class="hero position-relative overflow-hidden" id="inicio">
-      <div class="hero-image" aria-hidden="true"></div>
+<!-- HERO -->
+<section class="home-hero" id="inicio">
+  <span class="hero-soft-bubble bubble-1" aria-hidden="true"></span>
+  <span class="hero-soft-bubble bubble-2" aria-hidden="true"></span>
+  <span class="hero-soft-bubble bubble-3" aria-hidden="true"></span>
 
-      <div class="container-fluid position-relative hero-layer">
-        <div class="row min-vh-hero align-items-center">
-          <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+  <div class="container home-hero__container">
+    <div class="row align-items-center g-4 g-lg-5 flex-column-reverse flex-lg-row home-hero__row">
 
-            <div class="hero-content">
-              <div class="date-pill">📅 06 junio 2026</div>
+      <div class="col-lg-6 home-hero__content">
+        <p class="home-hero__eyebrow">
+          COLEGIO SUIZO SANTIAGO · COMISIÓN DE MEDIO AMBIENTE · CENTRO DE PARES
+        </p>
 
-              <h1 class="display-1 eco-title">Eco<span>Fest</span></h1>
+        <h1 class="home-hero__title">
+          Ecofest <span>2026</span>
+        </h1>
 
-              <div class="divider">🍃</div>
+        <p class="home-hero__lead">
+          Una jornada para compartir, aprender e inspirarnos en torno al cuidado del planeta.
+        </p>
 
-              <h2 class="eco-subtitle">Colegio Suizo de Santiago</h2>
+        <div class="home-hero__pills">
+          <span class="eco-pill">6 de junio</span>
+          <span class="eco-pill">10:00 – 13:00 hrs</span>
+          <span class="eco-pill">Colegio Suizo Santiago</span>
+        </div>
 
-              <p class="lead eco-lead">
-                Un día para aprender, inspirarnos y actuar por un futuro sostenible.
-                Charlas, talleres, actividades y feria de emprendedores.
-              </p>
+        <div class="home-hero__actions">
+          <a href="https://forms.gle/5asxhN7AXFr4Eody7" target="_blank" rel="noopener noreferrer" class="btn-eco-primary">
+            Inscripción online
+          </a>
 
-              <p class="organizer-text mb-1">
-                Organiza: Comisión de Medio Ambiente del Centro de Padres
-              </p>
-
-              <div class="divider">🍃</div>
-
-              <a href="#actividades" class="btn btn-lg eco-btn-primary">
-                Ver actividades
-              </a>
-            </div>
-
-          </div>
+          <a href="#programa" class="btn-eco-outline">
+            Ver programa
+          </a>
         </div>
       </div>
 
-      <div class="wave" aria-hidden="true"></div>
+      <div class="col-lg-6 home-hero__media">
+  <img
+    src="assets/hero-banner.png"
+    alt="Ilustración Ecofest de una persona cuidando el planeta"
+    class="home-hero__image img-fluid"
+  >
+</div>
+    </div>
+  </div>
+</section>
+
+    <section class="intro-strip">
+      <div class="container">
+        <p class="mb-0">
+          Una jornada para <strong>compartir, aprender e inspirarnos</strong> en torno al cuidado del planeta — con actividades para <strong>todas las edades.</strong> 🌿
+        </p>
+      </div>
+    </section>
+
+    <!-- TEMA CENTRAL -->
+    <section class="theme-section py-5" id="proposito">
+      <div class="container">
+        <div class="theme-card">
+          <div class="theme-icon">♻️</div>
+          <div>
+            <p class="section-kicker mb-2">Tema central 2026</p>
+            <h2 class="theme-title">Circularidad</h2>
+            <p class="theme-text">
+              Exploramos cómo la economía circular transforma nuestra forma de consumir y relacionarnos con el planeta.
+            </p>
+            <div class="theme-tags">
+              <span>♻️ Reutilización</span>
+              <span>🗑️ Reciclaje</span>
+              <span>🔧 Reparación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUMEN DE ACTIVIDADES -->
+    <section class="summary-section py-4" aria-label="Resumen de actividades">
+      <div class="container">
+        <div class="summary-grid">
+          <a href="#charlas" class="summary-tile"><span>🎤</span><strong>4 charlas</strong></a>
+          <a href="#talleres" class="summary-tile"><span>✂️</span><strong>3 talleres</strong></a>
+          <a href="#jornadas" class="summary-tile"><span>🛍️</span><strong>Feria sustentable</strong></a>
+          <a href="#jornadas" class="summary-tile"><span>🔌</span><strong>Diagnóstico electrónicos</strong></a>
+          <a href="#jornadas" class="summary-tile"><span>👗</span><strong>Ropa perdida</strong></a>
+          <a href="#coaniquem" class="summary-tile"><span>🤝</span><strong>Coaniquem</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVIDADES DE LA JORNADA -->
+    <section class="activities-section py-5" id="actividades">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">🌟 Actividades de la jornada</p>
+          <h2 class="section-title">Un día para aprender haciendo</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="col">
+            <article class="activity-card top-green h-100">
+              <div class="activity-icon">🎤</div>
+              <h3>Charlas de Sustentabilidad</h3>
+              <p>Cuatro charlas con expertos: reciclaje en casa, huella de carbono, aceites y compostaje. 30 min c/u.</p>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="activity-card top-amber h-100">
+              <div class="activity-icon">🛠️</div>
+              <h3>Talleres Prácticos</h3>
+              <p>Bomba de semillas, desodorante natural y cambio climático. ¡Actividades para niños y adultos!</p>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="activity-card top-mint h-100">
+              <div class="activity-icon">🛍️</div>
+              <h3>Feria de Emprendimientos</h3>
+              <p>Descubre productos y servicios sustentables de emprendedores de nuestra comunidad.</p>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="activity-card top-red h-100">
+              <div class="activity-icon">👗</div>
+              <h3>Recuperación de Ropa</h3>
+              <p>Recupera las prendas perdidas de tus hijos. Consumir conscientemente es también recuperar.</p>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="activity-card top-amber h-100">
+              <div class="activity-icon">🔌</div>
+              <h3>Diagnóstico de Electrónicos</h3>
+              <p>Un ingeniero evalúa si tu aparato puede repararse, evitando comprar uno nuevo.</p>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="activity-card top-green h-100">
+              <div class="activity-icon">🤝</div>
+              <h3>Donaciones Coaniquem</h3>
+              <p>Trae ropa y artículos en buen estado para ayudar a financiar tratamientos de quemaduras.</p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 
 <!-- COANIQUEM DESTACADO -->
@@ -187,200 +267,209 @@
   </div>
 </section>
 
-
-
-
-
-    
-
-    <!-- 
-    CONVOCATORIA EMPRENDEDORES - OCULTA TEMPORALMENTE
-    Para reactivar:
-    1. Quitar el atributo hidden del section.
-    2. Volver a mostrar el link "Postulación" en el menú.
-    -->
-
-
-    <!-- CONVOCATORIA EMPRENDEDORES -->
-    <section class="convocatoria-section py-5" id="convocatoria" hidden>
+    <!-- PROGRAMA VISUAL -->
+    <section class="program-section py-5" id="programa">
       <div class="container">
-        <div class="convocatoria-card">
-          <div class="row align-items-center g-4">
-
-            <div class="col-lg-7">
-              <p class="section-kicker mb-2">Feria de emprendimientos sustentables</p>
-              <h2 class="convocatoria-title">🌱 ¡Convocatoria abierta! 🌱</h2>
-
-              <p class="convocatoria-text">
-                Si tienes un emprendimiento sustentable y te gustaría participar en la Feria de
-                Emprendimientos de EcoFest 2026, te invitamos a postular completando el formulario.
-              </p>
-
-              <p class="convocatoria-text">
-                Buscamos iniciativas que promuevan la economía circular y el cuidado del medio ambiente 💚
-              </p>
-
-              <div class="convocatoria-deadline">
-                Postula hasta el <strong>24 de mayo</strong>
-              </div>
-
-              <a
-                href="https://forms.gle/XXJrroU3zbbmYuio7"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-lg eco-btn-primary mt-3"
-              >
-                Postular al formulario
-              </a>
-            </div>
-
-            <div class="col-lg-5 text-center">
-              <img
-                src="assets/convocatoria-ecofest.jpeg"
-                class="convocatoria-img"
-                alt="Convocatoria EcoFest 2026 para feria de emprendimientos sustentables"
-              >
-            </div>
-
-          </div>
+        <div class="section-header">
+          <p class="section-kicker">📋 Programa visual — ¿qué pasa y cuándo?</p>
+          <h2 class="section-title">Sábado 6 de junio · 10:00 a 13:00 hrs</h2>
+          <p class="section-lead">
+            Feria y jornadas circulares durante toda la jornada. Talleres en bloques continuos hasta las 12:00 hrs. Charlas de 30 minutos cada una.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <!-- ACTIVIDADES / TARJETAS -->
-    <section class="features py-5" id="actividades">
-      <div class="container">
-
-        <h2 class="section-title text-center mb-5">
-          <span>🍃</span> Un evento para transformar juntos <span>🍃</span>
-        </h2>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-
-          <div class="col">
-            <article class="card eco-card h-100">
-              <div class="card-body">
-                <div class="icon-circle icon-green">🎙️</div>
-                <h3 class="card-title">Charlas</h3>
-                <p class="card-text">
-                  Expertos y referentes que inspiran con ideas para un futuro sostenible.
-                </p>
-                <div class="mini-line"></div>
-              </div>
-            </article>
+        <div class="schedule-card" aria-label="Programa visual Ecofest 2026">
+          <div class="schedule-times">
+            <span>10:00</span>
+            <span>10:30</span>
+            <span>11:00</span>
+            <span>11:30</span>
+            <span>12:00</span>
+            <span>12:30</span>
+            <span>13:00</span>
           </div>
 
-          <div class="col">
-            <article class="card eco-card h-100">
-              <div class="card-body">
-                <div class="icon-circle icon-green">🌱</div>
-                <h3 class="card-title">Talleres</h3>
-                <p class="card-text">
-                  Aprende haciendo en talleres prácticos sobre medio ambiente y sostenibilidad.
-                </p>
-                <div class="mini-line"></div>
-              </div>
-            </article>
+          <div class="schedule-row">
+            <div class="schedule-label">Feria & Jornadas</div>
+            <div class="bar bar-full">🛍️ Feria · 🔌 Electrónicos · 👗 Ropa Perdida · 🤝 Coaniquem · 10:00–13:00 hrs</div>
           </div>
 
-          <div class="col">
-            <article class="card eco-card h-100">
-              <div class="card-body">
-                <div class="icon-circle icon-blue">👥</div>
-                <h3 class="card-title">Actividades</h3>
-                <p class="card-text">
-                  Juegos, desafíos y experiencias para todas las edades en contacto con la naturaleza.
-                </p>
-                <div class="mini-line"></div>
-              </div>
-            </article>
+          <div class="schedule-row">
+            <div class="schedule-label">Talleres</div>
+            <div class="bar bar-workshops">✂️ Talleres en bloques continuos · 10:00–12:00 hrs</div>
+            <div class="bar-note">Cierre 12:00</div>
           </div>
 
-          <div class="col">
-            <article class="card eco-card h-100">
-              <div class="card-body">
-                <div class="icon-circle icon-yellow">🏪</div>
-                <h3 class="card-title">Feria de<br>Emprendedores</h3>
-                <p class="card-text">
-                  Conoce proyectos innovadores que construyen un mundo mejor.
-                </p>
-                <div class="mini-line yellow"></div>
-              </div>
-            </article>
+          <div class="schedule-row talk-row">
+            <div class="schedule-label">Charla 1</div>
+            <div class="talk talk-1">🎤 Huella de Carbono<br><small>10:30–11:00</small></div>
           </div>
 
-        </div>
-      </div>
-    </section>
+          <div class="schedule-row talk-row">
+            <div class="schedule-label">Charla 2</div>
+            <div class="talk talk-2">🎤 Reciclando en casa<br><small>11:00–11:30</small></div>
+          </div>
 
-    <!-- PROPÓSITO -->
-    <section class="about-event py-5" id="proposito">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-9 text-center">
+          <div class="schedule-row talk-row">
+            <div class="schedule-label">Charla 3</div>
+            <div class="talk talk-3">🎤 Reciclaje de Aceites<br><small>11:30–12:00</small></div>
+          </div>
 
-            <h2 class="section-title mb-4">
-              <span>🌎</span> Propósito del evento <span>🌱</span>
-            </h2>
+          <div class="schedule-row talk-row">
+            <div class="schedule-label">Charla 4</div>
+            <div class="talk talk-4">🎤 Compostaje<br><small>12:00–12:30</small></div>
+            <div class="closing-note">13:00 · Cierre</div>
+          </div>
 
-            <p class="lead event-purpose">
-              EcoFest nace como una instancia para reunir a la comunidad escolar en torno al cuidado del medio ambiente,
-              promoviendo pequeñas acciones cotidianas que pueden generar grandes cambios.
-            </p>
-
-            <p class="event-purpose">
-              El evento se relaciona con el Día Mundial del Medio Ambiente, celebrado cada 5 de junio,
-              como una oportunidad para reflexionar, aprender y actuar frente a los desafíos ambientales actuales.
-            </p>
-
-            <p class="event-purpose mb-0">
-              A través de charlas, talleres, actividades y una feria de emprendedores sostenibles,
-              buscamos inspirar a estudiantes, familias y comunidad educativa a construir juntos un futuro más consciente,
-              colaborativo y sustentable.
-            </p>
-
+          <div class="legend">
+            <span><i class="legend-full"></i> Toda la jornada (10–13 hrs)</span>
+            <span><i class="legend-workshops"></i> Talleres (10–12 hrs)</span>
+            <span><i class="legend-talks"></i> Charlas (30 min c/u)</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CHARLAS -->
-    <section class="info-section py-5" id="charlas">
+    <section class="talks-section py-5" id="charlas">
       <div class="container">
-        <div class="row align-items-center g-4">
+        <div class="section-header section-header-line">
+          <p class="section-kicker">🎤 Las cuatro charlas</p>
+          <h2 class="section-title">Ideas concretas para vivir la circularidad</h2>
+        </div>
 
-          <div class="col-lg-5">
-            <p class="section-kicker mb-2">Ponentes</p>
-            <h2 class="section-heading">Charlas para inspirar acciones concretas</h2>
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+          <div class="col">
+            <article class="talk-card h-100">
+              <span class="talk-number">1</span>
+              <p class="talk-time">10:30 hrs</p>
+              <h3>Huella de Carbono: cómo nuestras decisiones generan impacto</h3>
+              <h4>Mario Devoto</h4>
+              <p>Las decisiones cotidianas de transporte, alimentación y consumo generan emisiones de CO₂. Aprende qué podemos cambiar desde la economía circular.</p>
+              <span class="audience">👨‍👩‍👧‍👦 5° básico en adelante</span>
+            </article>
           </div>
 
-          <div class="col-lg-7">
-            <p class="mb-0">
-              Espacio reservado para publicar los expositores, horarios y temas de cada charla.
-            </p>
+          <div class="col">
+            <article class="talk-card h-100">
+              <span class="talk-number">2</span>
+              <p class="talk-time">11:00 hrs</p>
+              <h3>Reciclando en nuestros hogares</h3>
+              <h4>Felipe Díaz</h4>
+              <p>Principios básicos del reciclaje y opciones concretas para hacerlo desde casa y en la ciudad.</p>
+              <span class="audience">👨‍👩‍👧‍👦 Toda la familia</span>
+            </article>
           </div>
 
+          <div class="col">
+            <article class="talk-card h-100">
+              <span class="talk-number">3</span>
+              <p class="talk-time">11:30 hrs</p>
+              <h3>Educamper: Reciclaje de Aceites Usados</h3>
+              <h4>Enrique Arredondo</h4>
+              <p>El impacto del aceite de cocina en el medio ambiente y cómo reciclarlo correctamente desde casa.</p>
+              <span class="audience">👨‍👩‍👧‍👦 Todas las edades</span>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="talk-card h-100">
+              <span class="talk-number">4</span>
+              <p class="talk-time">12:00 hrs</p>
+              <h3>Compostaje y Vermicompostaje</h3>
+              <h4>Claudia Arias Escobar</h4>
+              <p>Alternativas para transformar residuos orgánicos del hogar en abono para tus plantas.</p>
+              <span class="audience">👨‍👩‍👧‍👦 Todas las edades</span>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- TALLERES -->
-    <section class="info-section-soft py-5" id="talleres">
+    <section class="workshops-section py-5" id="talleres">
       <div class="container">
-        <div class="row align-items-center g-4">
+        <div class="section-header section-header-line">
+          <p class="section-kicker">✂️ Talleres prácticos — 10:00 a 12:00 hrs</p>
+          <h2 class="section-title">Tres talleres en bloques continuos</h2>
+          <p class="section-lead">Los materiales están incluidos. ¡Cada participante se lleva algo concreto a casa!</p>
+        </div>
 
-          <div class="col-lg-5">
-            <p class="section-kicker mb-2">Aprender haciendo</p>
-            <h2 class="section-heading">Talleres prácticos para la comunidad escolar</h2>
+        <div class="workshop-list">
+          <article class="workshop-card">
+            <span class="workshop-number">1</span>
+            <div>
+              <p class="workshop-time">Taller · 10:00–12:00 hrs</p>
+              <h3>Bomba de Semillas 🌱</h3>
+              <p>Prepara una bomba de barro con semillas de hortalizas y hierbas para cultivar en casa. Los niños aprenden a reconocer distintas semillas y se llevan su bomba lista para plantar.</p>
+              <div class="workshop-tags"><span>👦 Niños de 2 a 10 años</span><span>🌿 Se llevan su bomba</span></div>
+            </div>
+          </article>
+
+          <article class="workshop-card">
+            <span class="workshop-number">2</span>
+            <div>
+              <p class="workshop-time">Taller · 10:00–12:00 hrs</p>
+              <h3>Cambio Climático: El Antes y el Después 🌍</h3>
+              <p>Representar un lugar en dos momentos: cómo está hoy y cómo podría verse si lo adaptamos. Trabajo en grupos con collage y dibujo colaborativo.</p>
+              <div class="workshop-tags"><span>👦 Niños de 6 a 10 años</span><span>🎨 Se llevan su collage</span></div>
+            </div>
+          </article>
+
+          <article class="workshop-card">
+            <span class="workshop-number">3</span>
+            <div>
+              <p class="workshop-time">Taller · 10:00–12:00 hrs</p>
+              <h3>Prepara tu Desodorante Natural 🌿</h3>
+              <p>Bicarbonato, aceite de coco, maicena y aceite esencial. Sin plástico ni químicos innecesarios, con ingredientes que probablemente ya tienes en casa.</p>
+              <div class="workshop-tags"><span>🧑 A partir de 10 años</span><span>💚 Se llevan su desodorante</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JORNADAS CIRCULARES -->
+    <section class="circular-section py-5" id="jornadas">
+      <div class="container">
+        <div class="section-header section-header-line section-header-red">
+          <p class="section-kicker">💛 Jornadas circulares — disponibles toda la jornada</p>
+          <h2 class="section-title">Reutilizar, reparar y recuperar</h2>
+        </div>
+
+        <div class="circular-list">
+          <article class="circular-card">
+            <div class="circular-icon">🤝<span>Coaniquem</span></div>
+            <div>
+              <h3>Recolección de Donaciones para Coaniquem</h3>
+              <p>Trae ropa y artículos del hogar en buen estado. Coaniquem los vende en sus tiendas solidarias para financiar curaciones y tratamiento de quemaduras.</p>
+            </div>
+          </article>
+
+          <article class="circular-card">
+            <div class="circular-icon mint">👗<span>Circular</span></div>
+            <div>
+              <h3>Recuperación de Ropa Perdida</h3>
+              <p>Recupera las prendas que tus hijos han perdido este semestre. Consumo consciente: recuperar y reutilizar antes de comprar cosas nuevas.</p>
+            </div>
+          </article>
+
+          <article class="circular-card">
+            <div class="circular-icon amber">🔌<span>Reparación</span></div>
+            <div>
+              <h3>Diagnóstico Gratuito de Aparatos Electrónicos</h3>
+              <p>José Luis Lambert, ingeniero electricista, evaluará si tu aparato dañado puede repararse, evitando la compra de uno nuevo.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="fair-band mt-4">
+          <span class="fair-icon">🛍️</span>
+          <div>
+            <p>10:00 – 13:00 hrs</p>
+            <h3>Feria de Emprendimientos Sustentables</h3>
+            <p>Conoce productos y servicios que promueven la reutilización y el reciclaje en nuestra comunidad.</p>
           </div>
-
-          <div class="col-lg-7">
-            <p class="mb-0">
-              Espacio reservado para publicar los talleres disponibles, sus horarios,
-              cupos y materiales necesarios.
-            </p>
-          </div>
-
         </div>
       </div>
     </section>
@@ -389,11 +478,9 @@
     <section class="location-section py-5" id="lugar">
       <div class="container">
         <div class="row align-items-center g-4">
-
           <div class="col-lg-5">
-            <h2 class="section-title text-lg-start mb-4">
-              <span>📍</span> Lugar del evento
-            </h2>
+            <p class="section-kicker">📍 Lugar del evento</p>
+            <h2 class="section-title text-lg-start mb-4">Colegio Suizo Santiago</h2>
 
             <p class="location-text">
               José Domingo Cañas 2206<br>
@@ -401,17 +488,16 @@
             </p>
 
             <p class="location-text">
-              Te esperamos para compartir una jornada de aprendizaje, actividades,
-              talleres y feria de emprendedores sostenibles.
+              Te esperamos para compartir una jornada de aprendizaje, actividades, talleres y feria de emprendedores sostenibles.
             </p>
 
-            <a 
-              href="https://www.google.com/maps/search/?api=1&query=Jos%C3%A9%20Domingo%20Ca%C3%B1as%202206%2C%20%C3%91u%C3%B1oa%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile" 
-              target="_blank" 
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Jos%C3%A9%20Domingo%20Ca%C3%B1as%202206%2C%20%C3%91u%C3%B1oa%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile"
+              target="_blank"
               rel="noopener noreferrer"
-              class="btn btn-lg eco-btn-primary mt-3"
+              class="btn eco-btn-primary mt-3"
             >
-              Ver ubicación en Google Maps
+              Ver ubicación
             </a>
           </div>
 
@@ -426,43 +512,36 @@
               </iframe>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- CONTACTO / INSCRIPCIÓN -->
-    <section class="inscription-section py-5" id="contacto">
-      <div class="container text-center">
-
-        <h2 class="section-heading mb-3">¿Quieres participar?</h2>
-
-        <p class="mx-auto mb-4">
-          Escríbenos al correo de contacto.
-        </p>
-
-        <a href="mailto:medioambiente.cpp@css.cl" target="_blank" rel="noopener noreferrer" class="btn btn-lg eco-btn-primary">
-          Participar 🍃
-        </a>
-
+    <section class="cta-section py-5" id="contacto">
+      <div class="container">
+        <div class="cta-card text-center">
+          <p class="section-kicker">¡Únete!</p>
+          <h2>Nos vemos el 6 de junio</h2>
+          <p>Colegio Suizo Santiago · 10:00 a 13:00 hrs · Ingreso gratuito</p>
+          <div class="cta-actions">
+            <a href="https://forms.gle/5asxhN7AXFr4Eody7" target="_blank" rel="noopener noreferrer" class="btn eco-btn-primary">Inscripción online</a>
+            <a href="mailto:medioambiente.cpp@css.cl" class="btn eco-btn-secondary">medioambiente.cpp@css.cl</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer-ecofest py-4">
-      <div class="container text-center">
-
-        <p class="mb-2">
-          Organiza la Comisión de Medio Ambiente del Centro de Padres
-        </p>
-
-        <p class="mb-0">
-          Contacto:
-          <a href="mailto:medioambiente.cpp@css.cl">
-            medioambiente.cpp@css.cl
-          </a>
-        </p>
-
+      <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 text-center text-lg-start">
+        <div>
+          <p class="footer-title mb-1">Ecofest 2026 · Colegio Suizo Santiago</p>
+          <p class="mb-0">Organiza: Comisión de Medio Ambiente del Centro de Padres CSS · <a href="mailto:medioambiente.cpp@css.cl">medioambiente.cpp@css.cl</a></p>
+        </div>
+        <div class="footer-actions">
+          <a href="https://forms.gle/5asxhN7AXFr4Eody7" target="_blank" rel="noopener noreferrer">📋 Inscríbete</a>
+     
+        </div>
       </div>
     </footer>
 
