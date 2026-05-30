@@ -1373,4 +1373,53 @@ body {
   .home-hero__actions a {
     width: 100%;
   }
+
+/* BURBUJAS EN CONTACTO / INSCRIPCIÓN */
+
+.cta-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-card > *:not(.cta-bubble) {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-bubble {
+  position: absolute;
+  z-index: 1;
+  border-radius: 999px;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+.cta-bubble-1 {
+  width: 130px;
+  height: 130px;
+  top: 22px;
+  left: -36px;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.cta-bubble-2 {
+  width: 76px;
+  height: 76px;
+  top: 38px;
+  right: 12%;
+  background: rgba(236, 179, 58, 0.16);
+}
+
+.cta-bubble-3 {
+  width: 180px;
+  height: 180px;
+  right: -60px;
+  bottom: -70px;
+  background: rgba(223, 240, 233, 0.14);
+}
+
+
+
+
+
 }
