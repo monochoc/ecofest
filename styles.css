@@ -42,7 +42,7 @@ a {
   margin: 24px auto;
   background: var(--crema);
   border-radius: 32px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: var(--sombra-fuerte);
   border: 1px solid rgba(20, 66, 49, 0.12);
   position: relative;
@@ -57,12 +57,14 @@ a {
 }
 
 .eco-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 3000;
   min-height: 78px;
   background: rgba(22, 87, 62, 0.96);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   border-bottom: 4px solid var(--ambar);
-  z-index: 1030;
 }
 
 .eco-brand {
